@@ -19,16 +19,25 @@ The goal of this project is to make JLPT study more efficient by allowing users 
 
 ## Execute method: How to run app
 - 1. Clone the repository
-"git clone https://github.com/Nyxz1828/JLPT_FlashCard.git"
+```bash
+git clone https://github.com/Nyxz1828/JLPT_FlashCard.git"
+```
 - 2. Enter the project folder
-"cd JLPT_FlashCard"
+```bash
+cd JLPT_FlashCard
+```
 - 3. Install dependencies in bash
-"npm install"
+```bash
+npm install
+```
 - 4. Start the development server with:
-"npm run dev"
+```bash
+npm run dev
+```
 - 5. Then open the local URL shown in the terminal, usually:
-"http://localhost:5173"
-
+```bash
+http://localhost:5173
+```
 ---
 
 ## Tech Stack
