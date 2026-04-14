@@ -1,38 +1,23 @@
-function Header() {
-  const menuItems = ["Levels", "Errors", "Notes", "Test"];
-
+export default function Header({ items }) {
   return (
-    <aside
-      style={{
-        width: "220px",
-        minHeight: "100vh",
-        backgroundColor: "#1e1e2f",
-        color: "white",
-        padding: "24px 16px",
-        boxSizing: "border-box",
-      }}
-    >
-      <h2 style={{ marginBottom: "24px", fontSize: "22px" }}>Flash Card</h2>
+    <aside className="w-68 min-h-screen bg-white border-r border-gray-200 shadow-sm flex flex-col px-5 py-6">
+      <div className="mb-8">
+        <h1 className="text-2xl font-bold tracking-tight text-gray-900">
+          Flash Card
+        </h1>
+        <p className="text-sm text-gray-500 mt-2">Navigation</p>
+      </div>
 
-      <nav>
-        {menuItems.map((item) => (
-          <div
-            key={item}
-            style={{
-              padding: "12px 14px",
-              marginBottom: "12px",
-              borderRadius: "10px",
-              backgroundColor: "#2c2c44",
-              cursor: "pointer",
-              transition: "0.2s",
-            }}
+      <nav className="flex flex-col gap-3">
+        {items.map((item) => (
+          <button
+            key={item.id}
+            className="w-full text-left px-4 py-3 rounded-xl bg-gray-50 hover:bg-blue-50 hover:text-blue-700 transition-all duration-200 border border-transparent hover:border-blue-200"
           >
-            {item}
-          </div>
+            {item.label}
+          </button>
         ))}
       </nav>
     </aside>
   );
 }
-
-export default Header;

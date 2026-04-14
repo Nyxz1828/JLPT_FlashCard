@@ -4,7 +4,7 @@ function Home() {
   return (
     <div style={{ display: "flex", minHeight: "100vh", fontFamily: "Arial, sans-serif" }}>
       <Header />
-
+      
       <main
         style={{
           flex: 1,
