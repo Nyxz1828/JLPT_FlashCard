@@ -1,35 +1,27 @@
 import Header from "../components/Header";
 
 function Home() {
+  const menuItems = [
+    { id: 1, label: "Dashboard" },
+    { id: 2, label: "Decks" },
+    { id: 3, label: "Settings" },
+  ];
+
   return (
-    <div style={{ display: "flex", minHeight: "100vh", fontFamily: "Arial, sans-serif" }}>
-      <Header />
-      
-      <main
-        style={{
-          flex: 1,
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-          backgroundColor: "#f5f5f5",
-          padding: "30px",
-        }}
-      >
-        <div
-          style={{
-            width: "320px",
-            height: "220px",
-            backgroundColor: "white",
-            borderRadius: "16px",
-            boxShadow: "0 4px 12px rgba(0,0,0,0.15)",
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-            fontSize: "24px",
-            fontWeight: "bold",
-          }}
-        >
-          Flash Card
+    <div className="min-h-screen flex">
+      <Header items={menuItems} />
+
+      <main className="flex-1 p-10 flex items-center justify-center">
+        <div className="w-full max-w-sm rounded-3xl border border-gray-200 dark:border-slate-800 bg-white/90 dark:bg-slate-900/70 shadow-sm p-10 text-center">
+          <p className="text-sm uppercase tracking-wide text-gray-400 dark:text-slate-500">
+            Welcome
+          </p>
+          <h2 className="mt-3 text-2xl font-bold text-gray-900 dark:text-slate-100">
+            Flash Card
+          </h2>
+          <p className="mt-2 text-gray-600 dark:text-slate-300">
+            Start a quick review session.
+          </p>
         </div>
       </main>
     </div>

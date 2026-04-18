@@ -24,7 +24,7 @@ git clone https://github.com/Nyxz1828/JLPT_FlashCard.git"
 ```
 - 2. Enter the project folder
 ```bash
-cd JLPT_FlashCard
+cd JLPT_APP
 ```
 - 3. Install dependencies in bash
 ```bash
